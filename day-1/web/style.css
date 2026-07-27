@@ -1,0 +1,73 @@
+/* Reset mặc định để dễ kiểm soát layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f6f0; /* Màu nền hơi ngả vàng/kem thư giãn */
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+h1 {
+    color: #2e6040; /* Màu xanh lá đậm gợi nhớ đến lá sen */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.services-section h2 {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Căn phải cột giá tiền để dễ nhìn */
+td:last-child, th:last-child {
+    text-align: right;
+}
+
+td:last-child {
+    color: #d9534f;
+    font-weight: bold;
+}
