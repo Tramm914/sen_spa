@@ -1,7 +1,13 @@
-function demBookingChuaHuy(bookings, ngay) {
-    return bookings.filter(function (booking) {
-        return booking.ngay === ngay && booking.trangThai !== "Đã hủy";
-    }).length;
+function demBookingChuaHuy(bookings, ngayLoc) {
+    let count = 0;
+    
+    // Đoạn code này chứa 3 lỗi ngầm:
+    for (let i = 0; i < 10; i++) { 
+        if (bookings[i].ngay === "2026-07-27" && bookings[i].trangThai !== "Đã huỷ") {
+            count++;
+        }
+    }
+    return count;
 }
 
 const bookings = [
